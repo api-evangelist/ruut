@@ -1,7 +1,29 @@
 aid: ruut
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ruut.png
 name: RUUT
-description: RUUT is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  RUUT (ruut.mx) is a Mexican fintech and mobile-first investment platform that
+  lets everyday people invest in the US stock markets. Marketed as "la plataforma
+  de inversion para no inversionistas" (the investment platform for non-investors),
+  it gives users access to 8,000+ US stocks and ETFs, personalized risk-based
+  portfolios (safe, moderate, aggressive), goal-based investing, and AI-tailored
+  market news. Accounts are protected up to $500,000 USD via SIPC insurance
+  through its US brokerage partner Alpaca Securities LLC (FINRA/SIPC). RUUT is
+  registered with Mexico's CNBV as an independent investment advisor (Folio
+  #30174) and is a portfolio company of 500 Global. RUUT is a consumer product
+  with no public developer API; this profile was enriched from its public
+  website and live domain probes.
 url: https://raw.githubusercontent.com/api-evangelist/ruut/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Finance
+- Fintech
+- Investing
+- Investment Platform
+- Wealth Management
+- Stocks
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,12 @@ maintainers:
 common:
 - type: Website
   url: https://ruut.mx
+- type: DomainSecurity
+  url: security/ruut-domain-security.yml
+- type: WellKnown
+  url: well-known/ruut-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

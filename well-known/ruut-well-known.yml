@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: probed
+source: live HTTP probes of ruut.mx well-known paths
+host: ruut.mx
+paths:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+notes: >-
+  RUUT is a consumer-facing investment application (ruut.mx). No well-known
+  discovery documents are published; every probed path returned HTTP 404. This
+  is a valid, expected result for a mobile-first consumer product with no public
+  developer surface.
